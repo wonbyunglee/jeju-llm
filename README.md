@@ -36,3 +36,19 @@ This chatbot is a service that recommends famous restaurants in Jeju Island. Bas
 3. LLM-Based Response Generation
 - Combines BM25 + FAISS results and generates a natural language response using Gemini API.
 - Categorizes recommendations into hot places (trendy restaurants) and cool places (hidden gems).
+
+## Sample Output
+
+![alt text](image-1.png)
+
+- It clearly explains why a restaurant is recommended based on relevant factors such as time, location, and demographics.
+- The recommendations are divided into two categories:
+    - Hot Places 🔥: Popular and frequently visited restaurants.
+    - Cool Places 💧: Lesser-known spots with fewer visitors, providing a quieter dining experience.
+- This approach ensures users receive diverse restaurant options tailored to their preferences and circumstances.
+
+![alt text](image-2.png)
+
+- Alternative Recommendations: If the suggested hot place is too crowded or unsuitable, the chatbot offers a substitute cool place with a detailed explanation.
+- Trustworthy Recommendations: Each recommendation is accompanied by a rationale, improving credibility.
+- Convenience: If a restaurant has a URL, it is directly provided for easy access.
